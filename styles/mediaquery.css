@@ -1,0 +1,571 @@
+:root {
+    --main-color: #2B4029;
+}
+
+@media screen and (min-width: 1440px) {
+    #presentation-main {
+        max-width: 1440px;
+    }
+
+    #presentation-desc p {
+        font-size: clamp(1vw, 1.5em, 3vw);
+        max-width: 80%;
+    }
+
+    #about-card {
+        width: 100%;
+        min-height: 70rem;
+        align-items: center;
+    }
+
+    #about-card h2 {
+        max-width: 100%;
+    }
+
+    #about-main-inner-content {
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+    #about-main-inner-content {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+
+    #main-title-css::before {
+        left: 0;
+    }
+
+    #main-photo {
+        max-width: 348px;
+        height: 348px;
+    }
+
+    #presentation-content {
+        margin: 15rem;
+    }
+
+    #presentation-main {
+        gap: 4em;
+    }
+
+    #presentation-main p {
+        font-size: 1.7rem;
+    }
+
+    #finished-projects {
+        padding: 4.5rem 6.5rem;
+    }
+
+    .project-description p {
+        font-size: 1.5rem;
+    }
+
+    .project-description h2 {
+        font-size: 3rem;
+    }
+
+    #about-card {
+        padding: 4.4rem 1rem 1rem 4.9rem;
+    }
+
+    #about-card ul {
+        padding-right: 4rem;
+    }
+
+    #about-card li {
+        line-height: 2.72rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #main-skills .content-card:last-child {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 690px){
+        
+    #main-skills .content-card{
+        text-align: center;
+    }
+
+    #main-skills .content-card .card-figure {
+        margin: auto;
+    }
+    }
+
+    #main-skills .content-card:last-child .card-figure {
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #presentation-main p {
+        font-size: 1.5rem;
+    }
+
+    #about-main-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-main-inner-content {
+        align-items: center;
+        min-height: max-content;
+        width: 100%;
+    }
+
+    #about-card {
+        height: auto;
+        max-width: 100%;
+        flex-grow: 1;
+        text-align: center;
+        align-items: center;
+        margin: 3rem 4rem;
+        gap: 2rem;
+        padding: 3.9rem 0;
+        justify-content: center;
+    }
+
+    #about-card ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 100px 100px;
+        padding-right: 0;
+    }
+
+    #about-card li {
+        height: auto;
+        inset: 0;
+    }
+
+    #about-card li:nth-child(2) {
+        justify-self: flex-start;
+    }
+
+    #about-main-picture {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    #main-skills .content-card {
+        flex: 1 1 30.6rem;
+    }
+
+    #main-skills {
+        padding: 8rem 1.5rem;
+    }
+
+    #presentation-main {
+        flex-direction: column;
+        border-radius: 10rem 0;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+    #presentation-content {
+        margin: 12rem;
+        align-items: center;
+    }
+
+    #presentation-desc {
+        align-self: center;
+        gap: 2em;
+        align-items: center;
+    }
+
+    #presentation-desc h1 {
+        text-align: center;
+    }
+
+    #presentation-desc p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #presentation-footer {
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .technologies-card h2 {
+        max-width: 15rem;
+        width: 100%;
+    }
+
+    #photo-container {
+        width: 100%;
+    }
+
+    #finished-projects {
+        padding: 4.5rem 10rem;
+    }
+
+    .projects-card {
+        flex-direction: column;
+        padding: 2rem 6.6rem;
+        gap: 4rem;
+    }
+
+    .projects-card #img-bottom {
+        top: 0;
+    }
+
+    .projects-card .img-front {
+        bottom: 0;
+    }
+
+    .project-description {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    #frontQuestions img {
+        border-radius: 4rem;
+    }
+
+    #projeto-redes-sociais img:first-child {
+        top: -3rem;
+    }
+
+    #projeto-redes-sociais img:nth-child(2) {
+        top: 0;
+        height: 100%;
+    }
+
+    .projects-card>div {
+        width: 100%;
+    }
+
+    #projeto-redes-sociais>div:first-child {
+        order: 1;
+    }
+
+    #about-card {
+        min-height: 45rem;
+    }
+
+    #about-main-picture {
+        flex-grow: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #main-nav {
+        position: relative;
+    }
+
+    #menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgb(92, 147, 103);
+        border-radius: 0 0 10px 10px;
+        position: fixed;
+        top: 0;
+        right: 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 1em;
+        border: 1px solid #222;
+        border-top: 0;
+        z-index: 5;
+        min-height: 4.5rem;
+    }
+    
+    #hamburger {
+        width: 2rem;
+        border-top: 3px solid;  
+        color: white;
+    }
+
+    #hamburger::before, #hamburger::after {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 3px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: all .5s ease;
+        position: relative;
+    }
+
+    #nav-menu-mobile.opened #hamburger {
+        border: none;
+
+    }
+
+    #nav-menu-mobile.opened #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav-menu-mobile.opened #hamburger::after {
+        transform: rotate(-135deg);
+        top: -8px;
+    }
+
+    #nav-menu a{
+        display: none;
+    }
+
+    #nav-menu:last-child button {
+        z-index: 5;
+        position: fixed;
+        padding: .3em .8rem;
+        border-radius: 0 0 10px 10px;
+        border: 1px solid black;
+        border-top: 0px;
+        top: 0;
+        right: 8rem;
+        background: rgb(92, 147, 103);
+    } 
+    
+    #menu-switch-theme .material-icons {
+        transition: none;
+        transition: transform 1s  cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    body {
+        transition: none;
+    }
+
+    #main-header {
+        z-index: 1;
+    }
+
+    #nav-menu-mobile #menu-mobile-list {  
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        background-position: left center;
+        background: #FFF url(../images/bg-header.png) no-repeat;
+        background-size: cover;
+        background-blend-mode: hard-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6em;
+        text-align: center;
+        height: 0vh;
+        width: 100%;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    #menu-mobile-list a {
+        color: #FFF;
+    }
+    
+    #nav-menu-mobile.opened #menu-mobile-list {
+        background-position: 25% top;
+        background-size: cover;
+        height: 100vh;
+        visibility: visible;
+        overflow-y: visible;
+    }
+
+    #menu-mobile-list .nav-menu-item {
+        width: 70%;
+        font-size: 2.5em;
+        padding: 3rem;
+        border-bottom: 1px solid #00000048;
+    }
+
+    #main-desc {
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    #main-title-css {
+        width: 100%;
+    }
+
+    
+
+    #main-title-css::before {
+        bottom: 3em;
+        left: 2em;
+        font-size: 3.4rem;
+    }
+
+    #main-photo {
+        width: 348px;
+        height: 348px;
+        border-width: 10px;
+    }
+
+    #presentation-main #presentation-photo {
+        border-radius: 10rem 0 0 0;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        background-size: cover;
+        background-position: center center;
+        border: .5em solid white;
+        max-width: 100%;
+    }
+
+    #presentation-main {
+        backdrop-filter: blur(100px);
+        -webkit-backdrop-filter: blur(100px);
+        padding: 3em;
+        margin: 10rem;
+    }
+
+    #presentation-content {
+        margin: 10rem 2rem 10rem 2rem;
+    }
+
+    #presentation-desc {
+        padding: 0 1rem;
+    }
+
+    #presentation-desc h1 {
+        font-size: 2.5rem;
+    }
+
+    #presentation-footer {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .technologies-card {
+        max-width: calc(100% - 1rem);
+    }
+
+    .technologies-card h2 {
+        max-width: 100%;
+    }
+
+    #finished-projects {
+        padding: 10.5rem 3rem;
+    }
+
+    .projects-card {
+        padding: 1rem 3.5rem;
+    }
+
+    .project-description {
+        margin-bottom: 2em;
+    }
+
+    .project-description h2 {
+        font-size: 2.5rem;
+    }
+
+    #about-main ul {
+        margin: auto 0;
+        display: flex;
+    }
+
+    #about-card {
+        min-height: max-content;
+        padding-left: 2em;
+        padding-right: 2em;
+        margin: 0 1em;
+    }
+
+    #about-card h2 {
+        font-size: min(3rem, 5vw);
+    }
+
+    #about-card li {
+        font-size: 1.5rem;
+    }
+
+    #about-card #about-links {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:481px) {
+
+    #main-nav {
+        height: 6.5rem;
+    }
+
+    #main-title-css::before {
+        font-size: 3rem;
+        top: -2em;
+        left: 0;
+    }
+
+    #main-photo {
+        max-width: 100%;
+        width: 280px;
+        height: 288px;
+        margin: 2rem 0;
+        border-width: 6px;
+    }
+
+    #presentation-main {
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    #presentation-footer .technologies-card {
+        max-width: 100%;
+        flex-shrink: 1;
+    }
+
+    .technologies-card h2 {
+        padding: 0em;
+        padding-top: 1.5em;
+    }
+
+    .projects-card {
+        height: auto;
+    }
+
+    .projects-card .img-side {
+        min-height: auto;
+    }
+
+    #projects-content .projects-card img {
+        margin: auto;
+        height: 100%;
+        inset: 0;
+        top: 20px;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .projects-card .img-back {
+        display: none;
+    }
+
+    #projeto-redes-sociais img:last-child {
+        display: none;
+    }
+
+    #about-card {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    #about-card li::before {
+        position: relative;
+    }
+
+    #about-card li {
+        justify-content: center;
+        font-size: 1.4rem;
+    }
+
+
+}

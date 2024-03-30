@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wellington">
+    <meta name="description" content="Aonde compartilho minhas ideias, pensamentos e minhas principais competências">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="stylesheet"  href="styles/style.css" media="all" >
+    <link rel="stylesheet" href="styles/mediaquery.css" media="screen">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="images/habilidade-3.png" type="image/x-icon">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header id="main-header">
+
+        <nav id="main-nav">
+            <img src="images/logo-portfolio.png" alt="" id="logo-img">
+            <ul id="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#projects-title" class="darkLink">Projetos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#about-main" class="darkLink">Sobre mim</a>
+                </li>
+                <li class="nav-menu-item">
+                    <button id="menu-switch-theme" title="Trocar tema" onclick="changeTheme()">
+                        <span class="material-icons" id="material">dark_mode</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav-menu-mobile">
+            <button id="menu-button"><span id="hamburger"></span></button>
+            <ul id="menu-mobile-list">
+                <li class="nav-menu-item">
+                    <a href="#projects-title" class="mobileLink">Projetos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#about-title" class="mobileLink">Sobre mim</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#footer" class="mobileLink" id="Link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="main-desc">
+            <h1 id="main-title-css">Css</h1>
+            <img src="images/foto-perfil-desktop.jpg" alt="" id="main-photo">
+            <h1>Html</h1>
+        </div>
+    </header>
+
+    <aside id="main-skills">
+        <div class="content-card dark-background">
+            <figure class="card-figure">
+                <img src="images/habilidade-1.png" alt="" class="figure-content">
+            </figure>
+            <h2 class="card-title dark-background">Em direção ao aprendizado</h2>
+            <p class="card-description">
+                Sigo diariamente aprendendo mais sobre as tecnologias da área web,
+                seguindo meu próprio fluxo de aprendizado e construindo projetos em qual deposito todo meu
+                conhecimento.
+            </p>
+        </div>
+        <div class="content-card dark-background">
+            <figure class="card-figure">
+                <img src="images/habilidade-2.png" alt="" class="figure-content">
+            </figure>
+            <h2 class="card-title dark-background">Ideias novas a cada dia</h2>
+            <p class="card-description">
+                Muitas das ideias que tenho são diariamente colocadas em práticas, tanto sites testes quanto
+                projetos construídos para propósito de uso profissional.
+            </p>
+        </div>
+        <div class="content-card dark-background">
+            <figure class="card-figure">
+                <img src="images/habilidade-3.png" alt="" class="figure-content">
+            </figure>
+            <h2 class="card-title dark-background">Desenvolvedor Web com experiência</h2>
+            <p class="card-description">
+                Atuo na área da Web há 2 anos, produzindo conteúdos, sites e projetos que buscam ajudar as pessoas,
+                priorizando a experiência do usuário, mantendo o design elegante.
+            </p>
+
+        </div>
+    </aside>
+
+    <main id="main-content">
+        <section id="presentation-container">
+            <article id="presentation-content">
+                <main id="presentation-main">
+                    <div id="photo-container">
+                        <div id="presentation-photo"></div>
+                    </div>
+                    <div id="presentation-desc">
+                        <h1>Sempre buscando <span id="text-colorful">conhecimento</span></h1>
+                        <p>Busco conhecer afundo sobre as tecnologias que utilizo...</p>
+                        <a href="#projects-title">Ver projetos <span class="material-icons">arrow_downward</span></a>
+                    </div>
+                </main>
+                <footer id="presentation-footer">
+                    <div class="technologies-card">
+                        <img src="images/html-icon.svg" alt="">
+                        <h2>Html5</h2>
+                    </div>
+                    <div class="technologies-card">
+                        <img src="images/css-icon.svg" alt="">
+                        <h2>Css3</h2>
+                    </div>
+                    <div class="technologies-card">
+                        <img src="images/js-icon.svg" alt="">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="technologies-card">
+                        <img src="images/figma-icon.svg" alt="">
+                        <h2>Figma</h2>
+                    </div>
+
+                </footer>
+            </article>
+        </section>
+
+        <section id="finished-projects">
+            <h1 id="projects-title">Projetos realizados</h1>
+            <p id="projects-description">É onde eu deposito meu conhecimento na prática</p>
+
+            <section id="projects-content">
+                <article class="projects-card" id="frontQuestions">
+                    <div class="img-side">
+                        <img src="images/frontend-sites.png" alt="Versoo do projeto FrontQuestions" class="img-back">
+                        <img src="images/frontend-capa.png" alt="Capa do projeto FrontQuestions" class="img-front">
+                    </div>
+                    <div class="project-description">
+                        <h2>FrontQuestions</h2>
+                        <p>Um site feito para ajudar iniciantes e pessoas que pensam em atuar na área</p>
+                        <a href="https://wellington-lucas.github.io/Frontend-projeto/index.html" rel="next"
+                            target="_blank" class="link-button">Acesse</a>
+                    </div>
+                </article>
+                <article class="projects-card" id="projeto-redes-sociais">
+                    <div class="project-description">
+                        <h2>Social Share</h2>
+                        <p>Site produzido com o propósito de compartilhar minhas redes sociais</p>
+                        <a href="https://wellington-lucas.github.io/Projeto-Redes-Sociais/index.html" rel="next"
+                            target="_blank" class="link-button">Acesse</a>
+                    </div>
+                    <div class="img-side">
+                        <img src="images/redes-sociais-github.png" alt="Capa do projeto Redes Sociais">
+                        <img src="images/redes-sociais-capa.png" alt="Verso do projeto Redes Sociais">
+                    </div>
+                </article>
+                <article class="projects-card" id="projeto-android">
+                    <div class="img-side">
+                        <img src="images/projeto-android-verso.png" alt="Verso do projeto android" class="img-back">
+                        <img src="images/projeto-android-capa.png" alt="Capa do projeto android" class="img-front"
+                            id="img-bottom">
+                    </div>
+                    <div class="project-description">
+                        <h2>Projeto Android</h2>
+                        <p>Projeto criado para apresentar a história do android e seu mascote</p>
+                        <a href="https://wellington-lucas.github.io/Projeto-android/index.html" rel="next"
+                            target="_blank" class="link-button">Acesse</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section id="about">
+            <article id="about-content">
+                <header id="about-header">
+                    <h1 id="about-title">Sobre mim</h1>
+                </header>
+
+                <main id="about-main">
+                    <div id="about-main-inner">
+                        <section id="about-main-inner-content">
+                            <div id="about-card" class="dark-background">
+                                <div id="about-links">
+                                    <a href="tel:+55 47 99941-5910" title="Link para meu Telefone">
+                                        <img src="images/whats-white.png" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/wellingtonlucasdaveiga/" rel="external"
+                                        target="_blank" title="Link para meu instagram"><img src="images/ins.png"
+                                            alt=""></a>
+                                </div>
+                                <h2 id="about-creator-name">Eu sou <span>Wellington</span> Lucas da Veiga</h2>
+                                <ul>
+                                    <li>Nascido em Blumenau</li>
+                                    <li>Eu tenho 17 anos</li>
+                                    <li>Iniciei na área em 2021</li>
+                                    <li>Estudando atualmente no <a href="https://ibirama.ifc.edu.br/" rel="external"
+                                            target="_blank">IFC - Ibirama</a></li>
+                                </ul>
+
+                            </div>
+                        </section>
+                        <picture id="about-main-picture">
+                            <source media="(max-width: 600px)" srcset="images/perfil-bg-remove(600).png">
+                            <img src="images/perfil-bg-remove(851).png" id="about-main-me"
+                                alt="Foto de perfil do criador do site">
+                        </picture>
+                    </div>
+                </main>
+            </article>
+
+        </section>
+
+
+
+    </main>
+
+    <footer id="footer">
+        <article id="footer-container">
+            <h2>Me contate</h2>
+
+            <address id="footer-content">
+                <section id="footer-social-medias">
+                    <h3>Redes Sociais</h3>
+                    <div id="social-media-content">
+                        <a href="https://www.instagram.com/wellingtonlucasdaveiga/" rel="external" target="_blank"
+                            id="insta" title="Link para o meu instagram"><img src="images/insta-icon.svg" alt=""></a>
+                        <a href="https://wa.me/47999415910" id="whats" rel="external" target="_blank"
+                            title="Link para o meu Whatsapp"><img src="images/whatszap-icon.svg" alt=""></a>
+                        <a href="https://discord.gg/bSEAcnGzDw" id="discord" rel="external" target="_blank"
+                            title="Link para o meu servidor do discord"><img src="images/discord-icon.svg" alt=""></a>
+                    </div>
+                </section>
+                <section id="footer-repositories">
+                    <h3>Repositórios</h3>
+                    <a href="https://github.com/Wellington-Lucas" rel="external" target="_blank"
+                        title="Link para meus repositórios">
+                        <img src="images/github-icon.svg" alt="" id="githubImg">
+                    </a>
+                </section>
+                <section id="footer-contacts">
+                    <h3>Contatos profissionais</h3>
+
+                    <div id="contacts-content">
+                        <a href="tel:+55 47 99941-5910" class="contacts-inner" title="Link para meu Telefone">
+                            <img src="images/telephone.svg" alt="">
+                            <div id="contacts-tel">
+                                <h4>Telefone</h4>
+                                <p>+55 (47) 99941-5910</p>
+                            </div>
+                        </a>
+                        <a href="mailto:lutaxb@gmail.com?subject=Olá" class="contacts-inner"
+                            title="Link para meu email">
+                            <img src="images/email-icon.svg" alt="">
+                            <div id="contacts-email">
+                                <h4>Email</h4>
+                                <p>wellingtongit.1@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+            </address>
+            <p id="creator-name">Criado por: <span>Wellington Lucas da Veiga</span></p>
+
+        </article>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
