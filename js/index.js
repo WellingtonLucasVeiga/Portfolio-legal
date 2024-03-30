@@ -53,6 +53,10 @@ function changeTheme() {
     githubImg.style.filter = 'invert(1)'
     var mainDesc = (document.querySelectorAll('#main-desc > h1'))
     trocarBackground(mainDesc)
+    var testeh1 = document.getElementById('main-title-html')
+    testeh1.style.color = 'white'
+    console.log(mainDesc);
+    
 
     //Animação botão
     buttonTheme.style.transform = 'rotate(360deg)'
@@ -69,14 +73,14 @@ function changeTheme() {
 
     //Voltar ao padrão
     Array.from(mainDesc).forEach((x) => {
-        if (x.className != 'modo-escuro-cards') {
+        if (x.className != 'modo-escuro-cards') {            
             aboutInner.style.setProperty('--background-about', '#71C1FF')
             aboutHeader.style.setProperty('--background-header', '#6cecff')
             textColor.style.color = '#286E22'
             buttonTheme.style.transform = 'rotate(-360deg)'
             buttonTheme.style.color = '#494949'
             githubImg.style.filter = 'invert(0)'
-
+            testeh1.style.color = '#00000040'
             Array.from(backgroundLink).forEach((x) => {
                 x.style.setProperty('--background-link', 'black')
             })

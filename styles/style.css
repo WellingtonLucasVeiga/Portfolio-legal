@@ -194,7 +194,7 @@ a {
     z-index: -1;
 }
 
-#main-desc img + h1{
+#main-desc h1:nth-child(3){
     color: #00000040;
     transition: all .5s ease;
 }
@@ -918,7 +918,7 @@ a#insta:hover::after, a#insta:focus-visible::after {
 
 .modo-escuro-cards, #presentation-desc .modo-escuro-cards, #about-card .modo-escuro-cards, #contacts-content .modo-escuro-cards {
     color: white;
-    /* transition: all .5s ease; */
+    transition: all .5s ease;
 }
 
 #main-skills .modo-escuro-cards {
